@@ -6,7 +6,9 @@
     <div class="item4"></div>
     <div class="item1"></div>
     <div class="item2"></div>
+    <FlexItem/>
     <div class="item3"></div>
+    <FlexItem/>
     <div class="item4"></div>
     <div style="
       background-color: #325496;
@@ -20,12 +22,18 @@
       width: 100px;
       min-height: 200px;
     "></div>
+    <FlexItem/>
   </div>
 </template>
 
 <script>
+import FlexItem from './FlexItem';
+
 export default {
   name: 'hello',
+  components: {
+    FlexItem
+  },
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'

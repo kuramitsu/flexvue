@@ -6,7 +6,14 @@
     <div class="item4"></div>
     <div class="item1"></div>
     <div class="item2"></div>
-    <FlexItem/>
+    <FlexItem w="200px" :grow="5">1</FlexItem>
+    <FlexItem w="300px" :grow="30">
+      <div class="dashboard">
+        <FlexItem w="100px" h="30px" :grow="1"></FlexItem>
+        <FlexItem w="200px" h="30px" :grow="1"></FlexItem>
+        <FlexItem w="300px" h="30px" :grow="1"></FlexItem>
+      </div>
+    </FlexItem>
     <div class="item3"></div>
     <FlexItem/>
     <div class="item4"></div>
